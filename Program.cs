@@ -25,13 +25,11 @@ for (int i = 0; i < mass.Length; i++)
 Console.WriteLine("Количество четных чисел в массиве: " + count);
  */
 
- 
-
 // Задача 36: Задайте одномерный массив, заполненный
 // случайными числами. Найдите сумму элементов, стоящих
 // на нечётных позициях.
 
-void Print(int[] arr)
+/* void Print(int[] arr)
 {
     for (int i = 0; i < arr.Length; i++)
     {
@@ -52,4 +50,42 @@ for (int i = 1; i < mass.Length; i += 2)
 {
     sum = sum + mass[i];
 }
-Console.WriteLine("Сумма чисел, стоящих в массиве на нечетной позиции: " + sum);
+Console.WriteLine("Сумма чисел, стоящих в массиве на нечетной позиции: " + sum); */
+
+// Задача 38: Задайте массив вещественных чисел. Найдите
+// разницу между максимальным и минимальным
+// элементов массива.
+
+/* void Print(double[] arr)
+{
+    for (int i = 0; i < arr.Length; i++)
+    {
+        Console.Write(arr[i] + " ");
+    }
+    Console.WriteLine();
+}
+double[] mass = new double[5];
+Random rand = new Random();
+{
+    for (int i = 0; i < mass.Length; i++)
+    {
+        mass[i] = rand.Next(-10, 10) + rand.NextDouble();;
+    }
+}
+Print(mass);
+double min = mass[0];
+double max = mass[0];
+double difference = 0;
+for (int i = 0; i < mass.Length; i++)
+{
+    if (mass[i] > max)
+    {
+        max = mass[i];
+    }
+    if (mass[i] < min)
+    {
+        min = mass[i];
+    }
+}
+difference = max - min;
+Console.WriteLine($"Разница между между максимальным ({max}) и минимальным({min}) элементами: {difference}"); */
